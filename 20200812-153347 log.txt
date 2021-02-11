@@ -1,0 +1,318 @@
+INFO: Scrapy 1.8.0 started (bot: scrape_module)
+INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.7, Platform Windows-7-6.1.7601-SP1
+INFO: Overridden settings: {'BOT_NAME': 'scrape_module', 'DOWNLOAD_DELAY': 5, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': '20200812-153347 log.txt', 'LOG_FORMAT': '%(levelname)s: %(message)s', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'scrape_module.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrape_module.spiders']}
+INFO: Telnet Password: 8b14bbc35b019341
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['scrape_module.pipelines.SaveLinkPipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: ANZ OneAnswer Personal Super: Next manual check on 2021-01-11 13:33:00+00:00
+INFO: ANZ OneAnswer Pension: Next manual check on 2021-01-11 13:33:00+00:00
+INFO: ANZ Smart Choice Super: Revision requried. New date: D:20201124090828+11'00'
+INFO: ANZ Staff Super: No change to mod date
+INFO: AustralianSuper: No change to mod date
+INFO: Agentia Investment SMA: No change to mod date
+INFO: AMP SignatureSuper: No change to mod date
+INFO: AMIST Super: No change to mod date
+INFO: ANZ OneAnswer Investment Portfolio: Revision requried. New date: D:20201119120459+11'00'
+INFO: AMG Personal Super: No change to mod date
+INFO: Asgard Open eWRAP Investment: No change to mod date
+INFO: AMIST Pension: No change to mod date
+INFO: AMP Personalised Portfolio: No change to mod date
+INFO: AVSuper: Revision requried. New date: D:20201118140445+11'00'
+INFO: Asgard Elements - Investment: No change to mod date
+INFO: Allan Gray Superannuation: Revision requried. New date: D:20201201192852+11'00'
+INFO: Asgard Elements - Super: No change to mod date
+INFO: Crawled 31 pages (at 31 pages/min), scraped 15 items (at 15 items/min)
+INFO: AMP CustomSuper: No change to mod date
+INFO: Asgard eWrap Investment: No change to mod date
+INFO: Asgard Employee Super: No change to mod date
+ERROR: Error downloading <GET https://www.catholicsuper.com.au/robots.txt>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Traceback (most recent call last):
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\core\downloader\middleware.py", line 44, in process_request
+    defer.returnValue((yield download_func(request=request, spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+INFO: BT Compact SuperWrap Personal Super Plan: No change to mod date
+INFO: Asgard Infinity eWRAP Investment: No change to mod date
+INFO: BT Private SuperWrap+: Next manual check on 2021-01-11 13:30:00+00:00
+INFO: BT Select Administrator SuperWrap: Next manual check on 2021-01-11 13:32:00+00:00
+INFO: BT Select Administrator SuperWrap - Pension: Next manual check on 2021-01-11 13:32:00+00:00
+INFO: BT Select Portfolio InvestmentWrap: Next manual check on 2021-01-11 13:32:00+00:00
+INFO: BT Select Portfolio SuperWrap: Next manual check on 2021-01-11 13:32:00+00:00
+INFO: BT Select Portfolio SuperWrap - Pension: Next manual check on 2021-01-11 13:32:00+00:00
+INFO: BT SuperWrap - Pension Plan: Next manual check on 2021-01-11 13:52:00+00:00
+WARNING: BT SuperWrap - Personal Super Plan: could not retrieve URL
+WARNING: BT Wrap: could not retrieve URL
+INFO: AUSFund: No change to mod date
+INFO: Bendigo SmartOptions Super: No change to mod date
+INFO: BT Panorama Super: Revision requried. New date: D:20201204120914+11'00'
+INFO: Australian Catholic Super: No change to mod date
+INFO: BT Super: No change to mod date
+INFO: CAREportfolio Pension: No change to mod date
+INFO: Catholic Super: No change to mod date
+INFO: MLC Wrap Investments Series 1: Next manual check on 2021-01-11 14:46:00+00:00
+INFO: BT Super for Life - Savings: No change to mod date
+INFO: CareSuper: No change to mod date
+INFO: Commonwealth Bank Group Super: No change to mod date
+INFO: CBUS Super: No change to mod date
+INFO: BT Super Invest: No change to mod date
+INFO: Christian Super: No change to mod date
+INFO: Energy Super: No change to mod date
+INFO: Dominion Pension: No change to mod date
+INFO: CFS FirstChoice Wholesale Personal Super: No change to mod date
+WARNING: c:\programdata\anaconda3\lib\site-packages\urllib3\connectionpool.py:847: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+INFO: ClearView WealthFoundations Pension: No change to mod date
+INFO: AssetLink SuperWrap Personal Super Plan: No change to mod date
+INFO: Crawled 78 pages (at 47 pages/min), scraped 41 items (at 26 items/min)
+INFO: MLC Wrap Super Series 1: Next manual check on 2021-01-11 14:46:00+00:00
+INFO: BT SuperWrap Open - Super: Can not open PDF
+INFO: Club Plus Super: No change to mod date
+INFO: Equip MyFuture: No change to mod date
+INFO: FirstWrap Pension: No change to mod date
+INFO: BT Invest: No change to mod date
+INFO: encircle Pension: No change to mod date
+INFO: CFS FirstChoice Investments: No change to mod date
+INFO: ESSSuper Income Stream: No change to mod date
+INFO: First Super: No change to mod date
+INFO: Equip Account Based Pension: No change to mod date
+INFO: Aware Super Retirement Income Stream: No change to mod date
+INFO: FES Super: No change to mod date
+INFO: HostPlus Pension: No change to mod date
+INFO: Insignia Wrap: Next manual check on 2021-01-11 13:53:00+00:00
+INFO: Generation Life LifeBuilder: No change to mod date
+INFO: Intrust Super - Executive Super: No change to mod date
+INFO: Grow Wrap Pension Service: No change to mod date
+INFO: Generations Investment Portfolio: No change to mod date
+INFO: MLC Wrap Pension Series 1: Next manual check on 2021-01-11 14:46:00+00:00
+INFO: GESB Super: No change to mod date
+INFO: HESTA Super: No change to mod date
+INFO: ING Living Super: No change to mod date
+INFO: HUB24 Pension: No change to mod date
+INFO: HostPlus Super: No change to mod date
+INFO: FirstWrap Plus Super: No change to mod date
+INFO: Crawled 115 pages (at 37 pages/min), scraped 65 items (at 24 items/min)
+INFO: Insignia SuperWrap Pension: No change to mod date
+INFO: Integra Super Pension: No change to mod date
+INFO: Praemium Partner SuperSMA: No change to mod date
+INFO: GESB Retirement Income Pension: No change to mod date
+INFO: IOOF Employer Super: Can not open PDF
+INFO: Investment Exchange Retirement Service Pension: No change to mod date
+INFO: Gold State Super: No change to mod date
+INFO: IOOF WealthBuilder: No change to mod date
+INFO: IOOF Personal Super: No change to mod date
+INFO: IOOF Pension: No change to mod date
+INFO: IOOF Pursuit Focus Personal Super: Revision requried. New date: D:20201126200746+11'00'
+INFO: KeyInvest Life Events Bond: No change to mod date
+INFO: legalsuper Pension: No change to mod date
+INFO: IOOF Pursuit Focus Allocated Pension: Revision requried. New date: D:20201126091623+11'00'
+INFO: KeyInvest Funeral Bond: No change to mod date
+INFO: LG Super: No change to mod date
+WARNING: c:\programdata\anaconda3\lib\site-packages\urllib3\connectionpool.py:847: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+INFO: LGIA Super: No change to mod date
+INFO: IOOF Pursuit Focus Investment Service: Revision requried. New date: D:20201126090537+11'00'
+INFO: MLC Navigator Investment Plan Series 1: Next manual check on 2021-01-11 14:46:00+00:00
+INFO: Lifeplan Investment Bond: No change to mod date
+INFO: MAP Super: No change to mod date
+INFO: LUCRF Super: No change to mod date
+INFO: Crawled 145 pages (at 30 pages/min), scraped 87 items (at 22 items/min)
+INFO: Macquarie Investment Consolidator II: No change to mod date
+INFO: Lifeplan Education Bond: No change to mod date
+INFO: FuneralPlan Bond: No change to mod date
+INFO: IOOF Pursuit Select Investment Service: Revision requried. New date: D:20201124232932+11'00'
+INFO: IOOF Pursuit Select Personal Super: Revision requried. New date: D:20201124231956+11'00'
+INFO: Mason Stevens Super: No change to mod date
+INFO: Macquarie Super Accumulator: No change to mod date
+INFO: Mercer SmartSuper Plan: No change to mod date
+INFO: MLC Navigator Retirement Plan Series 1: Next manual check on 2021-01-11 14:45:00+00:00
+INFO: MLC Navigator Retirement Plan Series 1 - Pension: Next manual check on 2021-01-11 14:46:00+00:00
+INFO: Media Super: Revision requried. New date: D:20201201093150+10'00'
+INFO: Military Super: No change to mod date
+INFO: MLC Masterkey Pension Fundamentals: No change to mod date
+INFO: Crawled 164 pages (at 19 pages/min), scraped 100 items (at 13 items/min)
+INFO: IOOF Pursuit Select Allocated Pension: Revision requried. New date: D:20201124235448+11'00'
+INFO: MLC Masterkey Investment Fundamentals: No change to mod date
+INFO: Media Super Pension: Revision requried. New date: D:20201201124940+10'00'
+INFO: MTAA Super: No change to mod date
+INFO: Smartwrap Investment Account: No change to mod date
+INFO: eXpand Super: No change to mod date
+INFO: MyNorth Pension: No change to mod date
+INFO: eXpand Pension: No change to mod date
+INFO: NEO SuperSMA: Revision requried. New date: D:20190121171421+11'00'
+INFO: MyLife MySuper: No change to mod date
+INFO: MyNorth Investment: No change to mod date
+INFO: eXpand Investment: No change to mod date
+INFO: Crawled 179 pages (at 15 pages/min), scraped 112 items (at 12 items/min)
+INFO: NESS Super: No change to mod date
+INFO: Portfolio Administrator SuperWrap: Next manual check on 2021-01-11 16:00:00+00:00
+INFO: North Investment: No change to mod date
+INFO: IOOF Essential Pension: No change to mod date
+INFO: IOOF Essential Super: No change to mod date
+INFO: PortfolioOne Superannuation Service: Next manual check on 2021-01-11 14:54:00+00:00
+INFO: PortfolioOne Pension Service: Next manual check on 2021-01-11 14:54:00+00:00
+INFO: Portfolio Administrator SuperWrap Pension: Next manual check on 2021-01-11 16:00:00+00:00
+INFO: Netwealth Pension Accelerator: No change to mod date
+INFO: Portfolio Administrator InvestmentWrap: Next manual check on 2021-01-11 16:00:00+00:00
+INFO: Praemium Partner SMA: No change to mod date
+INFO: NGS Super - Allocated Pension: No change to mod date
+INFO: Sunsuper: No change to mod date
+INFO: OneAnswer Frontier Personal Super: No change to mod date
+INFO: Perpetual Private Investment Wrap: Next manual check on 2021-01-11 15:24:00+00:00
+INFO: Netwealth Wealth Accelerator: No change to mod date
+INFO: Perpetual WealthFocus Super Plan: No change to mod date
+INFO: eXpand Investment: No change to mod date
+INFO: Netwealth Super Wrap - Pension: No change to mod date
+INFO: OneAnswer Frontier Investment Portfolio: No change to mod date
+INFO: Macquarie Super Consolidator: No change to mod date
+INFO: PortfolioCare Elements Pension: Next manual check on 2021-01-11 16:10:00+00:00
+WARNING: PortfolioCare Elements Investment: could not retrieve URL
+WARNING: PortfolioCare Elements Super: could not retrieve URL
+INFO: Netwealth Investment Wrap: No change to mod date
+INFO: Perpetual WealthFocus Allocated Pension Plan: No change to mod date
+INFO: Plum Super: No change to mod date
+INFO: PortfolioCare Super: No change to mod date
+INFO: Perpetual Select Investment Funds: No change to mod date
+INFO: Macquarie Super Manager: No change to mod date
+INFO: Macquarie Investment Consolidator: No change to mod date
+INFO: Crawled 210 pages (at 31 pages/min), scraped 134 items (at 22 items/min)
+INFO: PSSAP: No change to mod date
+INFO: PremiumChoice Retirement Service Series 2 - Pension: No change to mod date
+INFO: Perpetual WealthFocus Investment Advantage: No change to mod date
+INFO: Praemium SMA Pension: No change to mod date
+INFO: Prime Super: No change to mod date
+INFO: Summit Personal Pension: No change to mod date
+INFO: REI Super: No change to mod date
+INFO: Russell iQ Super: No change to mod date
+INFO: Qantas Super: No change to mod date
+INFO: Russell Investments Super Series - Pension: No change to mod date
+INFO: QSuper: No change to mod date
+INFO: Perpetual Private Pension Wrap: No change to mod date
+INFO: REST Super: No change to mod date
+INFO: Suncorp Brighter Super: No change to mod date
+INFO: Tasplan Super: No change to mod date
+INFO: Crawled 240 pages (at 30 pages/min), scraped 150 items (at 16 items/min)
+INFO: Statewide Super: No change to mod date
+INFO: TelstraSuper Corporate Plus: No change to mod date
+INFO: SuperTrace: No change to mod date
+INFO: SuperSA Triple S: No change to mod date
+INFO: UniSuper: No change to mod date
+INFO: TWU TransPension: No change to mod date
+INFO: Macquarie Investment Manager: No change to mod date
+INFO: smartMonday PRIME: No change to mod date
+INFO: VicSuper FutureSaver: No change to mod date
+INFO: Russell iQ Retirement: No change to mod date
+INFO: Virgin Money Super: No change to mod date
+INFO: Russell Investments Wealth Series: No change to mod date
+INFO: WealthTrac Pension: No change to mod date
+INFO: vMAPs Super: No change to mod date
+INFO: West State Super: No change to mod date
+WARNING: c:\programdata\anaconda3\lib\site-packages\urllib3\connectionpool.py:847: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+INFO: Zurich Super Plan: No change to mod date
+INFO: Vision Personal: No change to mod date
+WARNING: c:\programdata\anaconda3\lib\site-packages\urllib3\connectionpool.py:847: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+INFO: Maritime Super: No change to mod date
+INFO: BUSSQ: No change to mod date
+INFO: EISS Super: No change to mod date
+INFO: Ultimate Super Service: No change to mod date
+INFO: Crawled 280 pages (at 40 pages/min), scraped 171 items (at 21 items/min)
+INFO: Australian Ethical Super: No change to mod date
+INFO: EISS Pension: No change to mod date
+INFO: Meat Industry Employees Superannuation Fund: No change to mod date
+INFO: Child Care Super: No change to mod date
+INFO: GuildSuper: No change to mod date
+INFO: Spaceship Voyager: No change to mod date
+INFO: ElectricSuper: No change to mod date
+INFO: Lutheran Super: No change to mod date
+INFO: GuildPension: No change to mod date
+INFO: Mine Super: No change to mod date
+INFO: DPM Investment Service Series 2: No change to mod date
+INFO: Victorian Independent Schools Super Fund: No change to mod date
+INFO: Mine Pension: No change to mod date
+INFO: Voyage Pension: No change to mod date
+INFO: Meat Industry Employees Pension: No change to mod date
+INFO: Mercy Super Pension: No change to mod date
+INFO: iAccess Allocated Pension: No change to mod date
+INFO: Nationwide Super: No change to mod date
+INFO: CFS FirstChoice Personal Super: No change to mod date
+INFO: emplus Super: No change to mod date
+INFO: Vision Income Stream: No change to mod date
+INFO: Crawled 307 pages (at 27 pages/min), scraped 192 items (at 21 items/min)
+INFO: CFS FirstChoice Wholesale Investments: No change to mod date
+INFO: Symetry LifeTime Super: No change to mod date
+INFO: Ignoring response <504 https://crescentwealth.com.au/islamic-super/super-pds/>: HTTP status code is not handled or not allowed
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 8,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 8,
+ 'downloader/request_bytes': 105558,
+ 'downloader/request_count': 321,
+ 'downloader/request_method_count/GET': 302,
+ 'downloader/request_method_count/POST': 19,
+ 'downloader/response_bytes': 31846031,
+ 'downloader/response_count': 313,
+ 'downloader/response_status_count/200': 279,
+ 'downloader/response_status_count/302': 3,
+ 'downloader/response_status_count/404': 28,
+ 'downloader/response_status_count/504': 3,
+ 'dupefilter/filtered': 201,
+ 'elapsed_time_seconds': 645.558,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 12, 8, 4, 44, 34, 889300),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/504': 1,
+ 'item_scraped_count': 194,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 230,
+ 'log_count/WARNING': 8,
+ 'response_received_count': 308,
+ 'retry/count': 9,
+ 'retry/max_reached': 2,
+ 'retry/reason_count/504 Gateway Time-out': 2,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 7,
+ "robotstxt/exception_count/<class 'twisted.web._newclient.ResponseNeverReceived'>": 1,
+ 'robotstxt/request_count': 114,
+ 'robotstxt/response_count': 113,
+ 'robotstxt/response_status_count/200': 85,
+ 'robotstxt/response_status_count/404': 28,
+ 'scheduler/dequeued': 216,
+ 'scheduler/dequeued/memory': 216,
+ 'scheduler/enqueued': 216,
+ 'scheduler/enqueued/memory': 216,
+ 'splash/render.html/request_count': 19,
+ 'splash/render.html/response_count/200': 19,
+ 'start_time': datetime.datetime(2020, 12, 8, 4, 33, 49, 331300)}
+INFO: Spider closed (finished)

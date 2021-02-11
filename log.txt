@@ -1,0 +1,212 @@
+INFO: Scrapy 1.8.0 started (bot: scrape_module)
+INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.7, Platform Windows-7-6.1.7601-SP1
+INFO: Overridden settings: {'BOT_NAME': 'scrape_module', 'DOWNLOAD_DELAY': 5, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'NEWSPIDER_MODULE': 'scrape_module.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrape_module.spiders']}
+INFO: Telnet Password: da2f7ffc9f68ae57
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Filtered duplicate request: <GET https://agentia.com.au/investments/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Crawled (200) <GET https://www.australiansuper.com/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.amp.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://agentia.com.au/robots.txt> (referer: None)
+ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy_splash\middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "C:\Users\User\Desktop\Feez\feez\scrape_module\spiders\platform_spider.py", line 255, in start_requests
+    yield scrapy.Request(get_url(scrape, self.name), self.parse, meta=meta)
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\http\request\__init__.py", line 26, in __init__
+    self._set_url(url)
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\http\request\__init__.py", line 70, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: 
+DEBUG: Crawled (200) <GET https://www.allangray.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.anz.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://amgsuper.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.amist.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.anz.com.au/personal/investing-super/superannuation/member-centre/product-disclosure-statement/> (referer: None)
+DEBUG: Starting new HTTPS connection (1): www.anz.com.au:443
+DEBUG: https://www.anz.com.au:443 "GET /content/dam/anzcomau/documents/pdf/smart-choice-super-pension-pds.pdf HTTP/1.1" 200 278955
+DEBUG: Crawled (200) <GET https://www.amp.com.au/employer/manage-your-plan/pds-and-fact-sheets> (referer: None)
+DEBUG: Starting new HTTPS connection (1): www.amp.com.au:443
+DEBUG: https://www.amp.com.au:443 "GET /content/dam/amp/digitalhub/common/Documents/Super/ProductInfo/SG_PDS.pdf HTTP/1.1" 200 1759005
+WARNING: No change to mod date
+DEBUG: Crawled (200) <GET https://www.amist.com.au/join-amist-super/> (referer: None)
+INFO: Scrapy 1.8.0 started (bot: scrape_module)
+INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.7, Platform Windows-7-6.1.7601-SP1
+INFO: Overridden settings: {'BOT_NAME': 'scrape_module', 'DOWNLOAD_DELAY': 5, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'NEWSPIDER_MODULE': 'scrape_module.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrape_module.spiders']}
+INFO: Telnet Password: fd4371a0f64f40d5
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Filtered duplicate request: <GET https://agentia.com.au/investments/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Crawled (200) <GET https://www.amp.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.australiansuper.com/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.anz.com.au/robots.txt> (referer: None)
+ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy_splash\middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "C:\Users\User\Desktop\Feez\feez\scrape_module\spiders\platform_spider.py", line 256, in start_requests
+    yield scrapy.Request(get_url(scrape, self.name), self.parse, meta=meta)
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\http\request\__init__.py", line 26, in __init__
+    self._set_url(url)
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\http\request\__init__.py", line 70, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: 
+DEBUG: Crawled (200) <GET https://www.allangray.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://agentia.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://amgsuper.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.amist.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.amp.com.au/employer/manage-your-plan/pds-and-fact-sheets> (referer: None)
+DEBUG: Starting new HTTPS connection (1): www.amp.com.au:443
+DEBUG: https://www.amp.com.au:443 "GET /content/dam/amp/digitalhub/common/Documents/Super/ProductInfo/SG_PDS.pdf HTTP/1.1" 200 1759005
+WARNING: No change to mod date
+DEBUG: Crawled (200) <GET https://www.australiansuper.com/tools-and-advice/learn/product-disclosure-statements> (referer: None)
+DEBUG: Crawled (200) <GET https://agentia.com.au/investments/> (referer: None)
+DEBUG: Starting new HTTPS connection (1): www.australiansuper.com:443
+DEBUG: https://www.australiansuper.com:443 "GET /-/media/australian-super/files/tools-and-advice/forms-and-fact-sheets/superannuation/product-disclosure-statements/pds.pdf HTTP/1.1" 200 644346
+WARNING: No change to mod date
+DEBUG: Crawled (200) <GET https://www.anz.com.au/personal/investing-super/superannuation/member-centre/product-disclosure-statement/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.amp.com.au/investments/personalised-portfolio> (referer: None)
+DEBUG: Starting new HTTPS connection (1): dyzz9obi78pm5.cloudfront.net:443
+DEBUG: https://dyzz9obi78pm5.cloudfront.net:443 "GET /app/image/id/5d11840e6e121c1219615cbd/n/agentia-pds-final.pdf HTTP/1.1" 200 None
+WARNING: No change to mod date
+DEBUG: Crawled (200) <GET https://www.amist.com.au/join-amist-super/> (referer: None)
+DEBUG: Starting new HTTPS connection (1): www.anz.com.au:443
+DEBUG: https://www.anz.com.au:443 "GET /content/dam/anzcomau/documents/pdf/smart-choice-super-pension-pds.pdf HTTP/1.1" 200 278955
+WARNING: Data requires revision
+DEBUG: Starting new HTTPS connection (1): www.amp.com.au:443
+DEBUG: https://www.amp.com.au:443 "GET /content/dam/amp/digitalhub/common/Documents/Investments/ProductInfo/amp-personalised-portfolio-pds-part-1.pdf HTTP/1.1" 200 1575696
+INFO: Scrapy 1.8.0 started (bot: scrape_module)
+INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.7, Platform Windows-7-6.1.7601-SP1
+INFO: Overridden settings: {'BOT_NAME': 'scrape_module', 'DOWNLOAD_DELAY': 5, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'NEWSPIDER_MODULE': 'scrape_module.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrape_module.spiders']}
+INFO: Telnet Password: dc41f23eba546a3b
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Filtered duplicate request: <GET https://agentia.com.au/investments/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Crawled (200) <GET https://www.amp.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.australiansuper.com/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.anz.com.au/robots.txt> (referer: None)
+ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy_splash\middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "C:\Users\User\Desktop\Feez\feez\scrape_module\spiders\platform_spider.py", line 256, in start_requests
+    yield scrapy.Request(get_url(scrape, self.name), self.parse, meta=meta)
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\http\request\__init__.py", line 26, in __init__
+    self._set_url(url)
+  File "c:\programdata\anaconda3\lib\site-packages\scrapy\http\request\__init__.py", line 70, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: 
+DEBUG: Crawled (200) <GET https://www.allangray.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://agentia.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://amgsuper.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.amist.com.au/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET https://www.australiansuper.com/tools-and-advice/learn/product-disclosure-statements> (referer: None)
+DEBUG: Starting new HTTPS connection (1): www.australiansuper.com:443
+DEBUG: https://www.australiansuper.com:443 "GET /-/media/australian-super/files/tools-and-advice/forms-and-fact-sheets/superannuation/product-disclosure-statements/pds.pdf HTTP/1.1" 200 644346
+WARNING: No change to mod date
+DEBUG: Crawled (200) <GET https://agentia.com.au/investments/> (referer: None)
+DEBUG: Starting new HTTPS connection (1): dyzz9obi78pm5.cloudfront.net:443
+DEBUG: https://dyzz9obi78pm5.cloudfront.net:443 "GET /app/image/id/5d11840e6e121c1219615cbd/n/agentia-pds-final.pdf HTTP/1.1" 200 None
+WARNING: No change to mod date
+DEBUG: Crawled (200) <GET https://www.amist.com.au/join-amist-super/> (referer: None)
+DEBUG: Starting new HTTPS connection (1): www.amist.com.au:443
+DEBUG: https://www.amist.com.au:443 "GET /wp-content/uploads/2020/10/PDS-AMIST-Super.pdf HTTP/1.1" 200 1624261
+WARNING: No change to mod date
+DEBUG: Crawled (200) <GET https://amgsuper.com.au/pds-and-forms/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.amp.com.au/employer/manage-your-plan/pds-and-fact-sheets> (referer: None)
+DEBUG: Crawled (200) <GET https://www.anz.com.au/personal/investing-super/superannuation/member-centre/product-disclosure-statement/> (referer: None)
+DEBUG: Starting new HTTPS connection (1): amgsuper.com.au:443
